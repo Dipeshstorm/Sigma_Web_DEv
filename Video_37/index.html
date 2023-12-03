@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolor Website</title>
+    <style>
+        /* :root{
+            --primary-color:#49bee4;
+            --text-color:#fff;
+            --secondary-color:#bde1ec;
+        } */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+        :root{
+            --primary-color:#e48449;
+            --text-color:#fff;
+            --secondary-color:#ecd4bd;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', serif;
+        }
+        nav{
+            background-color: var(--primary-color);
+            padding: 15px 0;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 75px;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+        ul li a{
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 32px;
+        }
+        footer{
+            background-color: var(--primary-color);
+            padding: 20px 0;
+        }
+        footer ul li a{
+            color: var(--text-color);
+        }
+        .container{
+            background-color: var(--secondary-color);
+            padding: 50px;
+        }
+        .boxes{
+            display: flex;
+            height: auto;
+            text-align: center;
+        }
+        .box1{
+            width: 50%;
+            background-color: #19bacb;
+            margin-right: 40px;
+            padding: 20px;
+            text-align: left;
+            height: 600px;
+        }
+        .box2{
+            width: 50%;
+            background-color: #cb19bf;
+            padding: 20px;
+            text-align: left;
+            height: 600px;
+        }
+        img{
+            position: sticky;
+            border-radius: 50%;
+        }
+        .welcome{
+            margin: 20px 60px;
+            border: 2px solid black;
+            border-radius: 50px;
+            height: auto;
+        }
+        p{
+            text-align: center;
+            padding: 40px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="boxes">
+            <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos saepe dolore numquam praesentium, dicta nisi ratione quod pariatur porro!</div>
+            <div class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos saepe dolore numquam praesentium, dicta nisi ratione quod pariatur porro!</div>
+        </div>
+    </div>
+    <div class="welcome">
+        <p>Welcome to this Sigma Web Development Course</p>
+    </div>
+    <footer>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+                <li><a href="/"><img src="https://www.vhv.rs/dpng/d/532-5322537_circle-shape-clipartsrc-data-circle-shapes-clip-art.png" alt="" width="50x" height="50px"></a></li>
+            </ul>
+    </footer>
+    
+</body>
+</html>

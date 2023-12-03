@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+.box{
+    border: solid 2px black;
+    padding: 34px;
+    /* box-shadow: h-offset v-offset blur spread color inset; */
+    box-shadow: 5px 15px 5px rgb(0, 191, 255);
+}
+.text-element{
+    text-shadow: 2px 2px 4px #dd8d8d;
+    outline: 2px solid black;
+    border: 2px solid yellow;
+    outline-offset: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <p class="text-element">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis itaque repudiandae praesentium ut laudantium, beatae et doloremque ea eum voluptatem dolore hic provident veritatis harum, voluptates ab molestias, eveniet debitis adipisci fugit fugiat. Repudiandae?
+    </p>
+</body>
+</html>

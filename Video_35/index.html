@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors </title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            color: pink;
+        } */
+        /* .boxes * {
+            color: blue;
+            border: 2px solid red;
+        }
+
+        p,
+        a,
+        .box,
+        [data-color="primary"] {
+            padding-top: 50px;
+        } */
+        /* .box:nth-child(odd){
+background-color: blue;
+        } */
+        .box:nth-last-child(2){
+            background-color: red;
+        }
+/* Insert elements/content in html with css */
+
+        /* .boxes::before{
+            content: "Dipesh is good";
+            color: purple;
+        }
+
+        .boxes::after{
+            content: "Dipesh is bad";
+            color: red;
+        } */
+
+        ::selection{
+            color:yellow;
+            background-color: rgb(33, 33, 32);
+        }
+        .box::first-letter{
+            color: blue;
+            font-size: 30px;
+        }
+        input::placeholder{
+            background-color: aquamarine;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" name="" id="" placeholder="Type name here">
+    </div>
+</body>
+
+</html>

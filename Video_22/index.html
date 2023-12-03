@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            border: 2px solid black;
+            width: 233px;
+            width: 1533px;
+            width: 80vw;
+            height: 30vh;
+            margin: auto;
+            background-color: blanchedalmond;
+        }
+        .container{
+            border: 2px solid black;
+            width: 233px;
+            width: 1533px;
+            width: 80vw;
+            /* height: 70vh; */
+            min-height: 80vh;
+            margin: auto;
+            background-color: blanchedalmond;
+            /* font-size: 18px; */
+        }
+        .container > div{
+            font-size: 2em;
+            /* font-size: 2rem; */
+            border: 2px solid red;
+            width: 50%;
+        }
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: black;
+            font-size: 22px;
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, voluptatem! Laboriosam, culpa, minus repellendus non corrupti hic, illo obcaecati placeat magni fugit similique facere earum! Eos itaque beatae repellendus dolorem.</p>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At vitae ad ut adipisci sit temporibus a quam ex consectetur, sed natus, sint reiciendis eaque quas ullam facilis, iste praesentium dolorem sequi porro sapiente ipsam corporis aspernatur. Omnis veniam dicta corrupti harum iusto animi nulla dolorem quidem. Voluptate fugiat cum porro quod quaerat dignissimos! Nihil consequatur corporis ipsum officia quis, delectus, reprehenderit molestias magnam nisi sit adipisci id. Recusandae, alias placeat. Fugit architecto illo nulla dolor. Quod unde repellendus dolorum, fugiat impedit at? Nihil, quae inventore delectus corrupti quasi magni, blanditiis quos, rerum velit dolorem quia ullam provident natus ut repellendus perferendis fugit error repudiandae? At natus vitae soluta consequatur eaque optio itaque hic, distinctio blanditiis aperiam exercitationem officiis commodi, quam quae sunt consequuntur, error sapiente perspiciatis voluptatum quibusdam culpa aspernatur reiciendis? optio officia a quisquam earum.
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quasi eaque, earum recusandae necessitatibus accusantium consectetur facere dolorem! Beatae exercitationem quos hic.
+            </div>
+        </div>
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolor Website</title>
+    <style>
+        /* :root{
+            --primary-color:#49bee4;
+            --text-color:#fff;
+            --secondary-color:#bde1ec;
+        } */
+        :root{
+            --primary-color:#e48449;
+            --text-color:#fff;
+            --secondary-color:#ecd4bd;
+        }
+        body{
+            background-color: var(--secondary-color);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: mulish;
+        }
+        nav{
+            background-color: var(--primary-color);
+            padding: 15px 0;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 25px ;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+        ul li a{
+            color: var(--text-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
